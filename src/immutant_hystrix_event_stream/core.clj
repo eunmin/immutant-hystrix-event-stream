@@ -1,6 +1,6 @@
 (ns immutant-hystrix-event-stream.core
   (:require [immutant.web.sse :as sse]
-            [clojure.core.async :refer [chan >!! <!! go-loop]])
+            [clojure.core.async :refer [chan >!! <!!]])
   (:import [com.netflix.hystrix.contrib.metrics.eventstream
             HystrixMetricsPoller
             HystrixMetricsPoller$MetricsAsJsonPollerListener]))
